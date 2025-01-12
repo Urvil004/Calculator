@@ -1,0 +1,77 @@
+body {
+    /* This body shows the layout of the calculator point to the center and with color of light grey background*/
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+#calculator {
+    /*This calculator css class that contains the font family, Bg color for calculator, with border radius 15pixels, maximux width assings 500px */
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    /*This is display css class this used for modify diplay on calculator with text inputed is align to the left side of display and, display bg color is lighter dark , and remove border*/
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: aliceblue;
+    caret-color: aliceblue;
+
+}
+
+#keys {
+    /*This is keys cdd class refer that hows the buttons layout is this is grid layout , grid-template-columns create 4 eual columns with gap of 10px and padding with 25 pixels*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    /*This is style selector used for give height, width, border-raduis, bg color, fontfamily and font size, with bold fonts and cursor: pointer shows that when curosr hover to any button then its switched to pointer*/
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    /* This is pseudo class method for lighter gray on hover */
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    /*This is pseudo class method for even lighter gray on click */
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+    /* Blue color for operator buttons */
+    background-color: hsl(238, 100%, 55%);
+}
+
+.operator-btn:hover {
+    /* Lighter blue color on hover */
+    background-color: hsl(212, 100%, 65%);
+}
+
+.operator-btn:active {
+    /* Darker blue color on click */
+    background-color: hsl(253, 61%, 43%);
+}
