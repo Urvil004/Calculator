@@ -1,2 +1,2 @@
-# Practical-Assignment
-Practical-Assignment Calculator 
+Calculator using HTML,CSS,JavaScript 
+ 
